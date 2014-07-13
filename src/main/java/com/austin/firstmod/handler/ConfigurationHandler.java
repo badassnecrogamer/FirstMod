@@ -11,6 +11,7 @@ public class ConfigurationHandler
 {
     public static Configuration configuration;
     public static boolean testValue = false;
+    public static boolean anothertest = true;
 
     public static void init(File configFile)
     {
@@ -25,6 +26,7 @@ public class ConfigurationHandler
     private static void loadConfiguration()
     {
         testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is an example configuration value");
+        anothertest = configuration.getBoolean("configValue2", Configuration.CATEGORY_GENERAL, false, "this is another test");
 
         if (configuration.hasChanged())
         {

@@ -1,5 +1,6 @@
 package com.austin.firstmod.item;
 
+import com.austin.firstmod.creavtivetab.CreativeTabLMRB;
 import com.austin.firstmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,7 +14,7 @@ public class ItemLMRB extends Item
     public ItemLMRB()
     {
         super();
-        this.setCreativeTab(CreativeTabs.tabMisc);
+        this.setCreativeTab(CreativeTabLMRB.LMRB_Tab);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.austin.firstmod.block;
 
+import com.austin.firstmod.creavtivetab.CreativeTabLMRB;
 import com.austin.firstmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,7 +14,7 @@ public class BlockLMRB extends Block
     public BlockLMRB(Material material)
     {
         super(material);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(CreativeTabLMRB.LMRB_Tab);
 
 
     }
